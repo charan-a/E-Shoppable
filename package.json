@@ -1,0 +1,31 @@
+{
+  "name": "eshoppable",
+  "version": "1.0.0",
+  "description": "E Commerce site ",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charan-a/E-Shoppable.git"
+  },
+  "author": "charan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/charan-a/E-Shoppable/issues"
+  },
+  "homepage": "https://github.com/charan-a/E-Shoppable#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  }
+}
